@@ -77,7 +77,4 @@
 	 <file src="Badge\Badge.Plugin.Abstractions\bin\$Configuration$\Badge.Plugin.Abstractions.pdb" target="lib\Xamarin.iOS10\Badge.Plugin.Abstractions.pdb" />
 	 
    </files>
-</package>="lib\Xamarin.iOS10\Badge.Plugin.Abstractions.pdb" />
-	 
-   </files>
 </package>
