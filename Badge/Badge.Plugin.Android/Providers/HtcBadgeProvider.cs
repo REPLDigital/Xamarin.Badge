@@ -28,7 +28,7 @@ namespace Badge.Plugin
         {
             var intent = new Intent(string.Format("{0}.{1}", HtcPackage, IntentAction));
             intent.PutExtra(PackageId, PackageName);
-            intent.PutExtra(count, count);
+            intent.PutExtra(CountId, count);
             Context.SendBroadcast(intent);
 
             var setNotificationIntent = new Intent(string.Format("{0}.{1}", HtcPackage, SetNotificationAction));
