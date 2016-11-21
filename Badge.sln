@@ -19,6 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badge.Plugin.WindowsPhone81
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badge.Plugin.WindowsStore", "Badge\Badge.Plugin.WindowsStore\Badge.Plugin.WindowsStore.csproj", "{ED9A4CA1-C04C-457D-9A2E-7995CCF12356}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{9F759830-F113-4AD8-AEDC-609EC47B31AF}"
+	ProjectSection(SolutionItems) = preProject
+		Shared\VersionSharedAssemblyInfo.cs = Shared\VersionSharedAssemblyInfo.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
