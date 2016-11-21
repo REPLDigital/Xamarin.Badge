@@ -1,32 +1,29 @@
 using Android.App;
 using Badge.Plugin.Abstractions;
 
-/*
+// Permissions for different launchers (default):
+[assembly:UsesPermission( Name = "com.android.launcher.permission.READ_SETTINGS" )]
+[assembly:UsesPermission( Name = "com.android.launcher.permission.WRITE_SETTINGS" )]
+[assembly:UsesPermission( Name = "com.android.launcher.permission.INSTALL_SHORTCUT" )]
+[assembly:UsesPermission( Name = "com.android.launcher.permission.UNINSTALL_SHORTCUT" )]
 
-<!-- for android -->
-<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
-<uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
-<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
-<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+// Samsung:
+[assembly:UsesPermission( Name = "com.sec.android.provider.badge.permission.READ" )]
+[assembly:UsesPermission( Name = "com.sec.android.provider.badge.permission.WRITE" )]
 
-<!-- Samsung -->
-<uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
-<uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+// HTC:
+[assembly:UsesPermission( Name = "com.htc.launcher.permission.READ_SETTINGS" )]
+[assembly:UsesPermission( Name = "com.htc.launcher.permission.UPDATE_SHORTCUT" )]
 
-<!-- HTC -->
-<uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
-<uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+// Sony:
+[assembly:UsesPermission( Name = "com.sonyericsson.home.permission.BROADCAST_BADGE" )]
 
-<!-- Sony -->
-<uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+// Apex:
+[assembly:UsesPermission( Name = "com.anddoes.launcher.permission.UPDATE_COUNT" )]
 
-<!--for apex-->
-<uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+// Solid:
+[assembly:UsesPermission( Name = "com.majeur.launcher.permission.UPDATE_BADGE" )]
 
-<!--for solid-->
-<uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
-
-*/
 
 namespace Badge.Plugin
 {
